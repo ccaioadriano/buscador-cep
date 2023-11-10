@@ -1,0 +1,82 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #212b45);
+}
+
+.title {
+    text-align: center;
+    font-size: 2.75rem;
+    color: #FFF;
+    animation: flipTitle 1s;
+}
+
+@keyframes flipTitle {
+    from {
+        transform: rotateX(90deg)
+    } to {
+        translate: rotateX(0deg);
+    }
+}
+
+.form {
+    background-color: rgba(255,255,255,0.2);
+    padding: 15px;
+    margin: 34px 0;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0,0,0,0.5);
+}
+
+.form input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #FFF;
+    outline: none;
+    margin-right: 8px;
+}
+
+.form input::placeholder {
+    color: #f1f1f1;
+}
+
+.button-search {
+    background-color: transparent;
+    border: 0;
+    cursor:pointer;
+    margin: auto 0;
+    transition: transform 0.5s;
+}
+
+.button-search:hover {
+    transform: scale(1.2);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    border-radius: 8px;
+    background-color: #FFF;
+}
+
+.main h2 {
+    margin: 16px 0;
+    font-size: 39px;
+}
+
+.main span {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media(max-width:620px) {
+    .main {
+        width: 80%;
+    }
+}
